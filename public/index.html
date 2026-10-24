@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Waveform</title>
+  <meta name="description" content="Waveform — an ad-free home for musicians and song artists. Share vertical videos, songs, beats and snippets.">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Waveform">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="app">
+    <main id="view" aria-live="polite"></main>
+    <nav id="tabbar" aria-label="Main">
+      <a href="/" data-tab="home" data-link><span class="i" data-icon="home"></span><span>Home</span></a>
+      <a href="/discover" data-tab="discover" data-link><span class="i" data-icon="search"></span><span>Discover</span></a>
+      <a href="/create" data-tab="create" data-link class="create-btn" aria-label="Create"><span class="i" data-icon="plus"></span></a>
+      <a href="/collab" data-tab="collab" data-link><span class="i" data-icon="users"></span><span>Collab</span></a>
+      <a href="/me" data-tab="me" data-link><span class="i" data-icon="user"></span><span>Me</span><b class="badge" id="me-badge" hidden></b></a>
+    </nav>
+  </div>
+  <div id="sheet-root"></div>
+  <div id="toast" role="status" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
